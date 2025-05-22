@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+nav {
+	background-color: #c0392b;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	height: 60px;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+nav ul li {
+	height: 60px;
+}
+
+nav ul li a {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 20px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.icone-nav {
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+main {
+	margin-top: 80px;
+	padding: 20px;
+	text-align: center;
+}
+
+.galeria-pizzas {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.galeria-pizzas img {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.lista-pizzas {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: 30px;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item-pizza {
+	display: flex;
+	align-items: center;
+	background-color: #f8f8f8;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-pizza img {
+	width: 480px;
+	height: 320px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-right: 20px;
+}
+
+.item-pizza h3 {
+	margin-bottom: 5px;
+}
+
+.carrinho {
+	max-width: 700px;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-carrinho {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.item-carrinho button {
+	background-color: #e74c3c;
+	color: white;
+	border: none;
+	padding: 6px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.total {
+	text-align: right;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+.finalizar {
+	align-self: flex-end;
+	background-color: #27ae60;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1em;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-top: 10px;
+}
