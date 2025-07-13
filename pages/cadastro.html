@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Cadastro - Pizzaria Delícia</title>
+		<link rel="stylesheet" href="/style/estilo.css" />
+		<script src="/scripts/script.js" defer></script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li>
+					<a href="/index.html"
+						><img src="/images/icon_pizza_home.png" class="icone-nav" alt="Home" /> Home</a
+					>
+				</li>
+				<li><a href="/pages/cardapio.html">Cardápio</a></li>
+				<li><a href="/pages/cadastro.html">Cadastro</a></li>
+				<li><a href="/pages/login.html">Login</a></li>
+				<li><a href="/pages/carrinho.html">Carrinho</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h1>Cadastro</h1>
+			<form id="form-cadastro" class="form-cadastro">
+				<input type="text" id="nome" placeholder="Nome completo" required />
+				<input type="text" id="rua" placeholder="Rua" required />
+				<input type="text" id="numero" placeholder="Número" required />
+				<input type="text" id="bairro" placeholder="Bairro" required />
+				<input type="text" id="cidade" placeholder="Cidade" required />
+				<input type="text" id="login" placeholder="Login" required />
+				<input type="password" id="senha" placeholder="Senha" required />
+				<button type="submit">Cadastrar</button>
+			</form>
+		</main>
+	</body>
+</html>
